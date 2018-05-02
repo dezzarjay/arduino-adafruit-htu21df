@@ -4,7 +4,6 @@ let Adafruit_HTU21DF = {
     _begin: ffi('int mgos_htu21df_begin(void *)'),
     _rdTp: ffi('double mgos_htu21df_readTemperature(void *)'),
     _rdHm: ffi('double mgos_htu21df_readHumidity(void *)'),
-    _rst: ffi('void mgos_htu21df_reset(void *)'),
 
     _proto: {
 
@@ -34,9 +33,6 @@ let Adafruit_HTU21DF = {
         // ## **`myHTU.reset()`**
         // Reset the sensor - sends the sensor-specific command to reset.
         // Return value: none
-        reset: function () {
-            Adafruit_HTU21DF._rst(this.htu);
-        }
 
     },
 

@@ -30,12 +30,6 @@ double mgos_htu21df_readHumidity(Adafruit_HTU21DF *htu) {
 
 }
 
-void mgos_htu21df_reset(Adafruit_HTU21DF *htu) {
-    if (htu != nullptr) {
-        htu->reset();
-    }
-}
-
 
 //class Adafruit_HTU21DF {
 //public:

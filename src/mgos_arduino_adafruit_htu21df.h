@@ -20,8 +20,6 @@ double mgos_htu21df_readTemperature(Adafruit_HTU21DF *htu);
 
 double mgos_htu21df_readHumidity(Adafruit_HTU21DF *htu);
 
-void mgos_htu21df_reset(Adafruit_HTU21DF *htu);
-
 
 //class Adafruit_HTU21DF {
 //public:
